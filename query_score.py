@@ -697,7 +697,7 @@ class WorkerThread(QThread):
 
         # 准备表单数据（URL编码考试阶段）
         data = {
-            "stage": quote(self.params["stage"], encoding='utf-8'),
+            "stage": self.params["stage"],
             "jym": ""  # 空验证码
         }
 
